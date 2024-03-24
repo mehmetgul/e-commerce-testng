@@ -6,7 +6,8 @@ import utility.ConfigReader;
 
 public class LoginFunctionalityTest extends TestBase {
 
-    @Test
+    @Test(groups = {"regression","smoke","login"},
+    description = "ECM-23 UI | Test the login process with a valid username and password.")
     public void loginFunctionalityTest() {
         String webSiteUrl = ConfigReader.getProperty("url");
 
